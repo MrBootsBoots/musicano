@@ -82,7 +82,16 @@
             music.src = "music/" + songs.name + "mp3";
             img.src = "images/" + songs.name + "jpg";
         };
-        loadSong(songs[1]);
+        songIndex = 0;
+        // loadSong(songs[1]);
+        
+        const nextSong = ( ) => {
+            songIndex = (songIndex + 1) % songs.length;
+            loadSong(songs[songIndex]);
+        };
+        
+        next.addEventListener('click', nextSong);
+        prev.addEventListener('click', prevSong);
     </script>
 </body>
 </html>
