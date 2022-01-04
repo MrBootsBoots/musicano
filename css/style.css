@@ -110,9 +110,9 @@ img{
         transform: rotate(360deg);
     }
 }
-#kendy{
+p #kendy{
     font-family: monospace;
     font-style: italic;
-    font-size: 0.69rem;
+    font-size: 0.6rem;
     color: grey;
 }
